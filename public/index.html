@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container-fluid">	
+        <h1>Friend Finder Survey</h1>
+        <form method="POST" action="/user">
+        <div class="row">  
+            <div class="col-lg">
+            
+                <label>Name (Required)</label>
+                <input type="text" placeholder="" name="name" required>
+                <label>Link to Photo of You(Required)</label>
+                <input type="url" placeholder="" name="photo_link" required>
+                <label>What is your gender?</label>
+                <input type="text" placeholder="Male/Female", name="gender" required>
+                <input type="text" name="userscore" id="hide">
+            </div>        
+        </div> 
+        
+        <div class="row">
+            <h3>Question 1:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>What best describes your personality?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop1" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="1">Charming and Genuine</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="2">Funny and Cute</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="3">Outgoing and Spontaneous</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="1" data-sum="4">Serious and Dark</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+            <h3>Question 2:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>Are you Introverted or Extroverted?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop2" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="2" data-sum="1">Introverted</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="2" data-sum="2">Extroverted</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+                <h3>Question 3:</h3>
+        </div>
+            <div class="row">
+            <div class="col-lg-3">
+                <h5>Which activity do you enjoy the best?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="3" data-sum="1">Watching movies</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="3" data-sum="2">Reading</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="3" data-sum="3">Hanging out with friends</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="3" data-sum="4">Outdoor activities</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+                <h3>Question 4:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>What's your favorite type of food?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop4" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="4" data-sum="1">Salad</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="4" data-sum="2">Sushi</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="4" data-sum="3">Pho</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="4" data-sum="4">Pizza</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="4" data-sum="5">Ribs</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+                <h3>Question 5:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>Are you an Early Bird or Night Owl?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop5" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="5" data-sum="1">Early Bird</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="5" data-sum="2">Night Owl</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+                <h3>Question 6:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>Which of the following do you like receiving the most?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop6" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="6" data-sum="1">Attention and quality time</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="6" data-sum="2">Acts of service</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="6" data-sum="3">Compliments and admiration</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="6" data-sum="4">Gifts</button>
+                    </div>
+            </div> 
+        </div>
+        <div class="row">
+                <h3>Question 7:</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-3">
+                <h5>Which of the following do you do to show your affection?</h5>    
+            </div>
+            <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle drop7" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item dropOpt" type="button" data-num="7" data-sum="1">Giving gifts</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="7" data-sum="2">Doing something nice </button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="7" data-sum="3">Spending quality time</button>
+                        <button class="dropdown-item dropOpt" type="button" data-num="7" data-sum="4">Giving compliments and showering admiration</button>
+                    </div>
+            </div> 
+        </div>
+        <button type="submit" class="execute">Submit</button>
+    </form>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="assets/javascript/finder.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
